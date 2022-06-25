@@ -11,3 +11,4 @@ for row in ['r1', 'r2']:
             df.loc[row, col] = 1
             df = df.replace(np.nan, 0)
         print(df)
+df = df.sort_index(key=lambda x: x.str.lower())
